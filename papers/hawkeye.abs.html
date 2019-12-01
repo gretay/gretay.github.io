@@ -1,0 +1,26 @@
+<HTML>
+<body>
+
+
+<center><h2>HAWKEYE: Effective Discovery of Dataflow Impediments to Parallelization.</h2>
+<P align=center><I>Omer Tripp, Greta Yorsh, John Field, Mooly Sagiv</I></P>
+
+<p>
+In <i>ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications</i>, 2011 (<a href="http://splashcon.org/2011/cfp/100"><b>OOPSLA'11</b></a>)</p>
+</center>
+
+
+<p>
+Parallelization transformations are an important vehicle for improving the performance and scalability of a software system. Utilizing concurrency requires that the developer first identify a suitable parallelization scope: one that poses as a performance bottleneck, and at the same time, exhibits considerable available parallelism. However, having identified a candidate scope, the developer still needs to ensure the correctness of the transformation. This is a difficult undertaking, where a major source of complication lies in tracking down sequential dependencies that inhibit parallelization and addressing them.
+</p><p>
+We report on Hawkeye, a dynamic dependence-analysis tool that is designed to assist programmers in pinpointing such impediments to parallelization. In contrast with field-based dependence analyses, which track concrete memory conflicts and thus suffer from a high rate of false reports, Hawkeye tracks dependencies induced by the abstract semantics of the data type while ignoring dependencing arising solely from implementation artifacts. This enables a more concise report, where the reported dependencies are more likely to be real as well as intelligible to the programmer.
+</p>
+
+
+<p>
+Click here to access the paper:
+<A href="hawkeye.pdf">PDF</A>.
+</p>
+
+</body>
+</HTML>

@@ -1,0 +1,42 @@
+<HTML>
+<body>
+<center><h2>Verifying Linearizability with Hindsight</h2>
+<P align=center>
+<I>Noam Rinetzky, Peter O'Hearn, Martin Vechev, Eran Yahav, Greta Yorsh</I></P>
+</p>
+
+<strong class="title"></strong><br>
+In <i>Proc. Principles of Distributed Computing</i>, 2010
+(<a href="http://www.podc.org/podc2010/"><b>PODC'10</b></a>)<br>
+
+<p>
+Preliminary version appeared as a position paper in <a href="http://www.cs.utah.edu/ec2/">EC^2 2009</a> (CAV 2009 workshop)<br>
+<b>Verifying Optimistic Algorithms Should be Easy</b>
+</p>
+
+</center>
+
+
+<p>
+We present a formal proof of safety and linearizability of a highly-concurrent optimistic set algorithm.
+The key step in our proof is the Hindsight lemma which allows a thread to infer the existence of a global state
+in which its operation can be linearized based on limited local atomic observations about the shared state.
+The Hindsight lemma <i>eliminates the need for explicitly reasoning about linearization points
+by allowing a temporal non-constructive approach to verify linearizability</i>.
+Furthermore, it is independent of the particular algorithm considered,
+and thus can be reused to verify other algorithms.
+</p><p>
+The Hindsight lemma assumes that the algorithm maintains certain simple invariants
+which are resilient to interference, and thus can be verified using purely thread-local proofs.
+As a consequence, the Hindsight lemma allows us to unlock a perhaps-surprising intuition:
+a high degree of interference makes non-trivial highly-concurrent algorithms
+in some cases much easier to verify than less concurrent ones.
+</p>
+
+<p>
+Click here to access the position paper:
+<a href="ec2-2009.pdf">PDF</a>;
+<a href="ec2-2009.ps">PS</a></p>
+
+</body>
+</HTML>

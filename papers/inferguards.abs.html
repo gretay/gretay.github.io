@@ -1,0 +1,41 @@
+<HTML>
+<body>
+<center><h2>Inferring Synchronization under Limited Observability</h2>
+<P align=center>
+<I>Martin Vechev, Eran Yahav, Greta Yorsh</I></P>
+</p>
+
+<p>In <i>Proc. Tools and Algorithms for the Construction and Analysis of Systems</i>, 2009
+            (<a href="http://www.embedded.rwth-aachen.de/tacas2009/"><b>TACAS 2009</b></a>)</p>
+
+</center>
+
+This paper addresses the problem of automatically inferring
+synchronization for concurrent programs.
+Given a program and a specification, we infer synchronization
+that avoids all interleavings violating the specification, but
+permits as many valid interleavings as possible.
+We let the user specify an upper bound on the cost of synchronization,
+which may limit the <i>observability</i> - what
+observations on program state can be made by the synchronization code.
+We present an algorithm that infers, under certain conditions, the
+<i>maximally permissive</i> synchronization for a given cost.<br>
+We implemented a prototype of our approach and applied it to
+infer synchronization in a number of small programs.
+
+
+<p>
+<a href="inferguards-tacas09.pdf">PDF</a>;
+<a href="inferguards-tacas09.ps">PS</a>;
+<A href="inferguards.ppt">Slides</A></p>
+<p>
+Click here to access the technical report:
+<A href="RC24661.pdf">PDF</A>;
+<A href="RC24661.ps">PS</A>;
+</p>
+
+
+
+
+</body>
+</HTML>

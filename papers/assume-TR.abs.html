@@ -1,0 +1,60 @@
+<HTML>
+<BODY>
+<center>
+<P><h2>
+Symbolically Computing Most-Precise Abstract Operations for Shape Analysis</h2></P>
+<p>
+<I>Greta Yorsh, Thomas Reps and Mooly Sagiv</I>
+</P>
+<p>
+<I>In Proc. Tools and Algorithms for the Construction and Analysis of
+Systems</I>, 2004 (<A href="http://www.daimi.au.dk/%7Ecpn/tacas04/"><B>TACAS
+2004</b></A>)
+</p>
+</center>
+<P ALIGN=left><FONT  COLOR="#000000" SIZE=3>
+Shape analysis concerns the problem of determining "shape
+invariants" for programs that perform destructive updating on dynamically
+allocated storage. This paper presents a new algorithm that takes as input a
+shape descriptor (describing some set of concrete stores <EM>X</EM>) and a
+precondition <EM>p</EM>, and computes the most-precise shape descriptor for the
+stores in <EM>X</EM> that satisfy <EM>p</EM>
+   .</FONT>
+<P align=left><FONT color=#000000 size=3>This algorithm solves several open
+problems in shape analysis:</FONT>
+<UL>
+  <LI>
+  <DIV align=left><FONT color=#000000 size=3>computing the most-precise
+  descriptor of a set of concrete stores represented by a logical formula;
+  </FONT></DIV>
+  <LI>
+  <DIV align=left><FONT color=#000000 size=3>computing best transformers for
+  atomic program statements and conditions; </FONT></DIV>
+  <LI>
+  <DIV align=left><FONT color=#000000 size=3>computing best transformers for
+  loop-free code fragments (i.e., blocks of atomic program statements and
+  conditions)</FONT></DIV>
+  <LI>
+  <DIV align=left><FONT color=#000000 size=3>performing interprocedural shape
+  analysis using procedure specifications and assume-guarantee
+  reasoning;</FONT></DIV>
+  <LI>
+  <DIV align=left><FONT color=#000000 size=3>computing the most-precise
+  overapproximation of the meet of two shape descriptors. </FONT></DIV></LI></UL>
+<P align=left><FONT color=#000000 size=3>The algorithm employs a theorem prover;
+termination can be assured by using standard techniques (e.g., having the
+theorem prover return a safe answer if a time-out threshold is exceeded) at the
+cost of losing the ability to guarantee that a most-precise result is obtained.
+</FONT></P>
+<P align=left><FONT color=#000000 size=3>A prototype has been implemented in
+TVLA, using the SPASS theorem prover. </P>
+
+<p>
+Click here to access the paper:
+<A HREF="assumeTACAS04.ps">PostScript</A>,
+<A HREF="assumeTACAS04.pdf">PDF</A>.<br>
+Click here to acces the technical report:
+<A HREF="assume-TR.ps">PostScript</A>,
+<A HREF="assume-TR.pdf">PDF</A>.
+</p></FONT></FONT></FONT></BODY>
+</HTML>

@@ -1,0 +1,54 @@
+<HTML>
+<body>
+<center><h2>Phalanx: Parallel Checking of Expressive Heap Assertions</h2>
+<P align=center>
+<I>Martin Vechev, Eran Yahav,  Greta Yorsh, Bard Bloom</I></P>
+</p>
+
+<p>
+In <i>Proc. International Symposium on Memory Management</i>, 2010
+            (<a href="http://www.cs.purdue.edu/ISMM10/"><b>ISMM'10</b></a>)<br>
+Full version published as <i>IBM Technical Report</i>, May 2009</p>
+
+</center>
+
+Unrestricted use of heap pointers makes software systems
+particularly difficult to understand. Incidental and accidental
+pointer aliasing result in unexpected side effects of seemingly
+unrelated operations, and are a major source of system
+failures. Such failures are hard to test or debug with existing
+tools, especially for concurrent programs.<br>
+We present PHALANX — a practical framework for dynamically
+checking expressive heap properties such as ownership,
+sharing and reachability. PHALANX uses novel parallel
+algorithms to efficiently check heap properties utilizing
+the available cores in the system.<br>
+To debug her program, a programmer can annotate it
+with expressive heap assertions in JML, which use heap
+primitives provided by PHALANX. The framework combines
+a modified version of the JML compiler with a specialized
+runtime to efficiently evaluate these assertions using parallel
+algorithms. The PHALANX runtime has been implemented
+on top of a production virtual machine.<br>
+We applied PHALANX to real world applications in various
+scenarios, and found expressive heap assertions to be
+extremely valuable in debugging and program understanding.
+Further, our experimental results indicate that evaluating
+heap queries using parallel algorithms can lead to significant
+performance improvements, often resulting in linear
+speedups as the number of cores increases.
+
+<p>
+Click here to access the paper:
+<a href="phalanx.pdf">PDF</a>;
+<a href="phalanx.ps">PS</a>;
+<a href="Phalanx.pptx">Slides</a>
+</p>
+
+<p>
+Click here to access the technical report:
+<a href="IBM-TR-phalanx.pdf">TR-PDF</a>;
+<a href="IBM-TR-phalanx.ps">TR-PS</a></p>
+
+</body>
+</HTML>

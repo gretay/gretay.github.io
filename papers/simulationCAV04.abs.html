@@ -1,0 +1,33 @@
+
+<HTML>
+<body>
+<center><h2>Verification Via Structure Simulation</h2>
+
+<P align=center><I>Neil Immerman, Alexander Rabinovich, Thomas
+Reps, Mooly Sagiv, and Greta Yorsh</I></P>
+<p>
+In <I>Proc. Computer Aided Verification</I>, 2004
+(<A href="http://www.dcs.warwick.ac.uk/CAV/"><B>CAV 2004</B></A>)</p>
+</center>
+
+This paper shows how to harness
+decision procedures to automatically verify safety properties of imperative
+programs that perform dynamic storage allocation and destructive updating of
+structure fields. Decidable logics that can express reachability properties are
+used to state properties of linked data structures, while guaranteeing that the
+verification method always terminates. The main technical contribution is a
+method of structure simulation in which a set of <I>original</I> structures that
+we wish to model, e.g., doubly linked lists, nested linked lists, binary trees,
+etc., are mapped to a set of <I>tractable</I> structures that can be reasoned
+about using decidable logics. Decidable logics that can express reachability are
+rather limited in the data structures that they can directly model. For
+instance, our examples use the logic MSO-E, which can only model function
+graphs; however, the simulation technique provides an indirect way to model
+additional data structures.
+<p>
+(Click here to access the paper:
+<A href="simulationCAV04.ps">PostScript</A>;
+<A href="simulationCAV04.pdf">PDF</A>)</p>
+
+</body>
+</HTML>
